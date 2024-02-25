@@ -1,0 +1,176 @@
+@font-face {
+    src: url("font/SwedbankHeadline-Bold.otf");
+    font-family: swedbank;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #696969;
+    background-color: #FBF2EA;
+    margin: 70px;
+}
+
+h1,
+h2 {
+    color: #512B2B;
+    font-family: swedbank;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    color: #FB4F00;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 32px;
+}
+
+form {
+    background-color: #F9F8F6;
+}
+
+.container {
+    padding: 20px 20px 0px 20px;
+}
+
+.hide-question {
+    display: none;
+}
+
+input,
+textarea {
+    line-height: 18px;
+    border: 1px solid #BCD8DB;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 13px 10px 13px 10px;
+    border-radius: 3px;
+    margin: 5px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox {
+    width: 28px;
+    height: 28px;
+    appearance: none;
+
+}
+
+.checkbox:hover,
+.checkbox:checked:hover {
+    background-color: #FDC927;
+    border-color: #FDC927;
+    transition: background-color 0.3 ease-out;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: #FB4F00;
+    border-color: #FB4F00;
+    transition: background-color 0.3 ease-out;
+}
+
+.label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.grid {
+    display: grid;
+
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+label {
+    margin-right: 10px;
+    text-align: right;
+}
+
+select {
+    line-height: 18px;
+    border: 1px solid #BCD8DB;
+    box-sizing: border-box;
+    background-color: #ECF9F3;
+    color: #512B2B;
+    font-size: 15px;
+    padding: 13px 10px 13px 10px;
+    border-radius: 3px;
+}
+
+
+.btn-main {
+    background-color: #ff5f00;
+    border: 1px solid #ff5f00;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#prevBtn {
+    background-color: #31a3ae;
+    border: 1px solid #31a3ae;
+}
+
+#prevBtn:hover {
+    background-color: #257886;
+    transition: color 0.3 ease-out;
+    cursor: pointer;
+}
+
+.btn {
+    color: #fff;
+    padding: 13px 15px;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+.btn:hover,
+.radio:hover {
+    background-color: #FB4F00;
+    transition: color 0.3 ease-out;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}

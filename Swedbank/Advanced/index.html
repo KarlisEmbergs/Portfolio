@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <h1>Small loan</h1>
+        <h2>For the small and big dreams in your life</h2>
+        <p>Thank you for you interest in applying for a small loan. Please answer our 2-minute survey below to find out
+            your
+            eligibility for a small loan.</p>
+    </header>
+
+
+    <form action="/thanks" method="post" id="form">
+
+        <div class="container" id="q1">
+            <h2>Contact details</h2>
+            <p>Please enter your forename and surname below.</p>
+            <label class="label" for="forename">Forename:</label>
+            <input type="text" name="forename" id="forename" placeholder="Forename" required>
+            <br>
+            <label class="label" for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+        </div>
+
+        <div class="container hide-question" id="q2">
+            <h2>Loan requirement</h2>
+            <p>Please select the required loan amount and preferred repayment date.</p>
+            <label class="label" for="loanAmount">Loan amount:</label>
+            <input type="range" name="loanAmount" id="loanAmount" min="300" max="20000" step="50" value="300" required>
+            <br>
+
+            <!-- drop-down -->
+            <label class="label" for="paymentDate">Preferred repayment date:</label>
+            <select name="paymentDay" id="paymentDate" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+            </select>
+        </div>
+
+        <div class="container hide-question" id="q3">
+            <h2>Loan purpose</h2>
+            <p>What is the purpose of this loan?</p>
+
+            <!-- checkbox -->
+            <ul>
+                <li>
+                    <label class="label" for="appliancesFurniture">Home appliances or furniture</label>
+                    <input class="checkbox" type="checkbox" name="purpose" value="appliancesFurniture"
+                        id="appliancesFurniture" required>
+                </li>
+                <li>
+                    <label class="label" for="homeImprovement">Home improvement or repairs</label>
+                    <input class="checkbox" type="checkbox" name="purpose" value="homeImprovement" id="homeImprovement"
+                        required>
+                </li>
+                <li>
+                    <label class="label" for="car">Car purchase or repairs</label>
+                    <input class="checkbox" type="checkbox" name="purpose" value="car" id="car" required>
+                </li>
+                <li>
+                    <label class="label" for="consumption">Consumption</label>
+                    <input class="checkbox" type="checkbox" name="purpose" value="consumption" id="consumption"
+                        required>
+                </li>
+                <li>
+                    <label class="label" for="education">Education</label>
+                    <input class="checkbox" type="checkbox" name="purpose" value="education" id="education" required>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container hide-question" id="q4">
+            <h2>Salary and employer</h2>
+            <p>Please enter your monthly net salary and the name of your current.</p>
+
+            <label class="label" for="salary">Monthly salary:</label>
+            <input type="text" inputmode="numeric" name="salary" id="salary" pattern="[0-9]+" maxlength="19" required>
+            <label class="label" for="salary">€</label>
+            <br>
+            <!-- text-area -->
+            <label class="label" for="employer">Employer:</label>
+            <textarea name="employer" id="employer" cols="30" rows="1" placeholder="Current employer"
+                required></textarea>
+        </div>
+
+        <div class="container hide-question" id="q5">
+            <!-- radio -->
+            <h2>Loan commitments</h2>
+            <p>Do you have loan commitments outside Swedbank?</p>
+            <input class="radio" type="radio" name="loanCommit" id="loanCommit" value="yes" required>
+            <label class="label" for="loanCommit">Yes</label>
+            <input class="radio" type="radio" name="loanCommit" id="loanCommit" value="no" required>
+            <label class="label" for="loanCommit">No</label>
+            <div class="btn-container">
+            </div>
+
+        </div>
+
+        <div class="btn-container" id="q">
+            <button class="btn-main btn hide-question" id="prevBtn">Previous</button>
+            <button class="btn-main btn" id="conBtn">Continue</button>
+            <input class="btn-main btn hide-question" id="submit" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
